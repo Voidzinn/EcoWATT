@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/style-formulario.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+    <header>
+        <div class="nav_bar">
+            <div class="nav_items"><i class="fi fi-rr-home"></i><a href="./home.html">Página Inicial</a></div>
+            <div class="nav_items"><i class="fi fi-rr-wind-turbine"></i><a href="./simulador_economia.html">Simulador de Economias</a></div>
+            <div class="nav_items"><i class="fi fi-rr-bulb"></i><a href="./informativos.html">Informativos sobre</a></div>
+            <div class="nav_items"><i class="fi fi-rr-user"></i><a href="./perfil.html">Seu perfil</a></div>
+        </div>
+    </header>
+    <main>
+        <h1>
+            Estime sua energia
+        </h1>
+        <p>
+            Preencha o formulário abaixo com os seus aparelhos elétricos.
+        </p>
+        <form>
+            <div class="componentes">
+                <label class="fundo_componente">Microondas
+                    <input type="number" placeholder="0">
+                </label>
+                <label class="fundo_componente">Chuveiro
+                    <input type="number" placeholder="0">
+                </label>
+                <label class="fundo_componente">Televisores
+                    <input type="number" placeholder="0">
+                </label>
+                <label class="fundo_componente">Geladeira
+                    <input type="number" placeholder="0">
+                </label>
+                <label class="fundo_componente">Máquina de lavar
+                    <input type="number" placeholder="0">
+                </label>
+                <label class="fundo_componente">Ventiladores
+                    <input type="number" placeholder="0">
+                </label>
+            </div>
+            <div class="dados-complementares">
+                <label class="fundo_componente">Estado
+                    <select>
+                        <option value="" disabled selected hidden>Selecione seu estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </label>
+                <label class="fundo_componente">Consumo mensal médio de energia (kWh)
+                    <input type="text" placeholder="00kWh">
+                </label>
+                <label class="fundo_componente">Quantidade de moradores da casa
+                    <input type="number" placeholder="0">
+                </label>
+            </div>
+            <div class="container-botao">
+                <button class="calcular" type="submit">Calcular minha economia</button>
+            </div>
+        </form>
+        <div style="width: 50%; max-width: 900px; margin: 60px auto;">
+            <canvas id="graficoEnergia" height="200"></canvas>
+        </div>
+        <div style="width: 50%; max-width: 900px; margin: 60px auto;">
+            <canvas id="graficoEconomia" height="300"></canvas>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./grafico-economia.js"></script>
+        <script src="./grafico-formulario.js"></script>
+    </main>
+</body>
+</html>

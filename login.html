@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style-login.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+</head>
+<body>
+    <div class="corpo">
+        <div class="lado_esquerdo">
+            <h1>Login</h1>
+            <form class="formulario" onsubmit="login(); return false;">
+                <i class="fi fi-rr-user"></i>
+                <input type="text" name="" id="usr" placeholder="Usuário">
+                <i class="fi fi-rr-lock"></i>
+                <input type="password" id="pwd" placeholder="Senha">
+                <button>Login</button>
+            </form>
+            <a class="forgot" href="">Esqueceu a senha?</a>
+        </div>
+
+        <img src="images/Energia%20Solar.png" alt="Imagem fontes de energias">
+
+        <div style="position: relative; overflow: hidden;">
+            <svg viewBox="0 0 1440 320" style="position: absolute; bottom: 0; width: 100%; height: auto;">
+                <path fill="#c7e4b5" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,154.7C480,128,600,96,720,112C840,128,960,192,1080,208C1200,224,1320,192,1380,176L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            </svg>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script src="login.js"></script>
+</html>

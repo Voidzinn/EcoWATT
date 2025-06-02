@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdf1
+}
+
+.forgot {
+    text-decoration: none;
+    color: black;
+}
+
+.forgot:hover {
+    color: #175746;
+    text-decoration: underline;
+}
+
+i {
+    color: #175746;
+    position: relative;
+}
+
+.corpo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 20px 25%;
+    font-size: 30px;
+}
+
+.corpo h1 {
+    color: #175746;
+}
+
+.lado_esquerdo{
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.lado_esquerdo input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    color: #175746;
+}
+
+.lado_esquerdo button {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    background-color: #175746;
+    color: white;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.corpo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilizações */
