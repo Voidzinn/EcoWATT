@@ -11,6 +11,7 @@ function login()
             console.log(data[0]+" = "+password);
             if(data[0].password === password)
             {
+                localStorage.setItem('loggedUser', JSON.stringify(data[0]));
                 window.location.href = "home.html";
             }
             else
